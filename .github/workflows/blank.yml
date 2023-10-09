@@ -29,6 +29,6 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
 
-      - uses: actions-go/go-action@test
+      - uses: actions-go/go-action@composite
         with:
           myInput: 100
