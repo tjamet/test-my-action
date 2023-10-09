@@ -32,3 +32,6 @@ jobs:
       - uses: actions-go/go-action@composite
         with:
           myInput: 100
+      - uses: ./
+        with:
+          myInput: 100

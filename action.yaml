@@ -1,0 +1,13 @@
+name: 'Your name here'
+description: 'Provide a description here'
+author: 'Your name or organization here'
+runs:
+  using: "composite"
+  steps:
+  - uses: actions-go/go-action@composite
+    with:
+        myInput: 500
+  - run: |
+      echo "${{ toJSON(github) }}"
+      echo "world!"
+    shell: bash
